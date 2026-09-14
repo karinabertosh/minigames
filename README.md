@@ -7,15 +7,21 @@ Single Page Application for a catalog of browser mini-games, leaderboards, and p
 - [Vite](https://vite.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/)
 
 ## Scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the local development server |
-| `npm run build` | Type-check the project and create a production build |
-| `npm run preview` | Preview the production build locally |
-| `npm run deploy` | Build the app and publish `dist/` to the `gh-pages` branch |
+| Command                | Description                                                |
+| ---------------------- | ---------------------------------------------------------- |
+| `npm run dev`          | Start the local development server                         |
+| `npm run build`        | Type-check the project and create a production build       |
+| `npm run preview`      | Preview the production build locally                       |
+| `npm run lint`         | Run ESLint across the codebase                             |
+| `npm run format`       | Format files with Prettier                                 |
+| `npm run format:check` | Check Prettier formatting without writing files            |
+| `npm run deploy`       | Build the app and publish `dist/` to the `gh-pages` branch |
 
 ## Getting started
 
@@ -23,6 +29,11 @@ Single Page Application for a catalog of browser mini-games, leaderboards, and p
 npm install
 npm run dev
 ```
+
+## Git hooks
+
+- `commit-msg` rejects commit messages that do not follow the [RS School Git convention](https://rs.school/docs/git-convention)
+- `pre-push` runs ESLint and Prettier checks and aborts the push if there are errors or warnings
 
 ## Deploy to GitHub Pages
 
