@@ -12,11 +12,15 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -t true"
+    "deploy": "gh-pages -d dist -t true",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@types/node": "^24.5.2",
     "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
     "sass": "^1.93.2",
     "typescript": "~5.9.3",
     "vite": "^8.3.0"
