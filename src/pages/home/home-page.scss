@@ -1,0 +1,50 @@
+@use '../../styles/mixins' as *;
+
+.home-page {
+  @include content-container;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding-inline: var(--size-5);
+}
+
+.home-page__header,
+.home-page__footer {
+  display: flex;
+  align-items: center;
+  min-height: var(--button-size-lg-height);
+}
+
+.home-page__title {
+  margin: 0;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
+}
+
+.home-page__content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.home-page__description {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+@include tablet-up {
+  .home-page {
+    padding-inline: var(--size-8);
+  }
+}
+
+@include desktop-up {
+  .home-page {
+    padding-inline: var(--size-10);
+  }
+}
