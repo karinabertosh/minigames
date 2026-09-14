@@ -33,6 +33,7 @@ npm run dev
 ## Git hooks
 
 - `commit-msg` rejects commit messages that do not follow the [RS School Git convention](https://rs.school/docs/git-convention)
+- `pre-push` runs ESLint and Prettier checks and aborts the push if there are errors or warnings
 
 ## Deploy to GitHub Pages
 
