@@ -10,6 +10,8 @@
     "noEmit": true,
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "moduleDetection": "force"
   },
   "include": ["vite.config.ts"]

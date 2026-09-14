@@ -7,6 +7,7 @@ Single Page Application for a catalog of browser mini-games, leaderboards, and p
 - [Vite](https://vite.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)
 - [Husky](https://typicode.github.io/husky/)
 
 ## Scripts
@@ -16,6 +17,7 @@ Single Page Application for a catalog of browser mini-games, leaderboards, and p
 | `npm run dev` | Start the local development server |
 | `npm run build` | Type-check the project and create a production build |
 | `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the codebase |
 | `npm run deploy` | Build the app and publish `dist/` to the `gh-pages` branch |
 
 ## Getting started

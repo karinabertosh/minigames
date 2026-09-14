@@ -21,9 +21,9 @@ export function createElement<K extends keyof HTMLElementTagNameMap>(
   if (options.attributes !== undefined) {
     const attributeEntries: ReadonlyArray<[string, string]> = Object.entries(options.attributes);
 
-    attributeEntries.forEach(([name, value]: [string, string]): void => {
+    for (const [name, value] of attributeEntries) {
       element.setAttribute(name, value);
-    });
+    }
   }
 
   return element;
