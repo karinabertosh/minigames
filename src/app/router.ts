@@ -15,7 +15,10 @@ export class Router {
   public constructor(outlet: HTMLElement, routes: ReadonlyArray<RouteDefinition>) {
     this.outlet = outlet;
     this.routes = new Map(
-      routes.map((route: RouteDefinition): [AppRoute, () => HTMLElement] => [route.path, route.render]),
+      routes.map((route: RouteDefinition): [AppRoute, () => HTMLElement] => [
+        route.path,
+        route.render,
+      ]),
     );
     this.baseUrl = import.meta.env.BASE_URL;
 
@@ -42,7 +45,9 @@ export class Router {
 
   private getPathname(): string {
     const pathname: string = window.location.pathname;
-    const normalizedBase: string = this.baseUrl.endsWith('/') ? this.baseUrl.slice(0, -1) : this.baseUrl;
+    const normalizedBase: string = this.baseUrl.endsWith('/')
+      ? this.baseUrl.slice(0, -1)
+      : this.baseUrl;
 
     if (normalizedBase !== '' && pathname.startsWith(normalizedBase)) {
       const strippedPath: string = pathname.slice(normalizedBase.length);

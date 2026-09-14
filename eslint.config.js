@@ -1,3 +1,4 @@
+import eslintConfigPrettier from 'eslint-config-prettier';
 import js from '@eslint/js';
 import globals from 'globals';
 import unicorn from 'eslint-plugin-unicorn';
@@ -29,4 +30,5 @@ export default tseslint.config(
       'unicorn/prefer-global-this': 'off',
     },
   },
+  eslintConfigPrettier,
 );

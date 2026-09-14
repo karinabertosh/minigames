@@ -8,17 +8,20 @@ Single Page Application for a catalog of browser mini-games, leaderboards, and p
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
 - [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/)
 
 ## Scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the local development server |
-| `npm run build` | Type-check the project and create a production build |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint across the codebase |
-| `npm run deploy` | Build the app and publish `dist/` to the `gh-pages` branch |
+| Command                | Description                                                |
+| ---------------------- | ---------------------------------------------------------- |
+| `npm run dev`          | Start the local development server                         |
+| `npm run build`        | Type-check the project and create a production build       |
+| `npm run preview`      | Preview the production build locally                       |
+| `npm run lint`         | Run ESLint across the codebase                             |
+| `npm run format`       | Format files with Prettier                                 |
+| `npm run format:check` | Check Prettier formatting without writing files            |
+| `npm run deploy`       | Build the app and publish `dist/` to the `gh-pages` branch |
 
 ## Getting started
 
